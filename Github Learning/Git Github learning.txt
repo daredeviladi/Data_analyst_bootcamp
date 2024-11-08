@@ -1,0 +1,80 @@
+Learning video - https://www.youtube.com/watch?v=uaeKhfhYE0U
+
+Git - Version control system that is used to control versions of our file.
+
+$ git --version // for checking the version of GitHub. 
+
+
+$ git config --global user.name "Aditya Gupta" //for setting email and name in git bash
+
+
+$ git config --global --edit // will open vim editor where you can change the details. 
+
+Escape + :wq - exit vim editor
+
+
+$ mkdir sampledirectory // for creating new directory
+
+$ cd sampledirectory/   // for getting inside of the directory(We can create this folder a git repo by using->>>>>>> $ git init)
+
+
+$ ls  // getting list of files in the folder
+$ ls -a // Including all files
+
+always open your file in the same destination where you are creating the git repo
+
+
+$ git status // for checking status of the commits
+
+working directory------------------->staging area---------------->repository
+                     git add                        git commit
+
+$ git add <filename>  // the file is in staging area(the file is in hold before committing.)
+
+
+$ git commit -m "commit message"  // It will commit the code from staging area to repository , -m means message.
+
+$ git log  // To find how much commit we have done
+
+$ git checkout <hash code> // to find the history regarding the hash code.
+
+$ git checkout <branch name>  // to go to the master branch
+
+$ git branch // to check how much branches are there on the list
+
+$ git branch <branch-name>  // to create branches of master
+                               or
+$ git checkout -b Aditya/multiply // add another branch of feature multiply
+
+
+$ git merge Aditya/multiply   // I will merge the Aditya/multiply in dev branch cz we were using git command on dev branch!! navigate through checkout command
+
+
+$ touch .gitignoter // for creating a ignore file which will not tracked on git ecosystem. like some sensitive information (just add the name of file in .gitignore to ignore the file)
+
+
+$ git clone <link>  // for cloning the code, link is obtained from the code link option in github
+
+-------------------------------------------------------------------------------------------
+GitHub
+
+…or create a new repository on the command line
+echo "# Sampledirectory" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/daredeviladi/Sampledirectory.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/daredeviladi/Sampledirectory.git // for making connection, origin is the name
+git branch -M main                                  // for navigating master
+git push -u origin main                             // for pushing the code
+
+
+$ Username for "https://github.com": daredeviladi
+$ Password for "https://github.com": Aditya@232002 //id pass login
+
+cd .. // for exiting existing repo
